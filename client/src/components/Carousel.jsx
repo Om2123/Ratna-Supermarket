@@ -4,21 +4,26 @@ import { Paper } from '@mui/material';
 import NextIcon from './NextIcon';
 
 const CarouselComponent = () => {
-  const images = ['/carousel.png', '/carousel2.png', '/carousel3.png', '/carousel.png'];
+  const images = ['/b1.webp', '/b2.webp'];
 
   return (
     <Carousel
-    NextIcon={<NextIcon />}
-    PrevIcon={<NextIcon reverse/>}
+      NextIcon={<NextIcon />}
+      PrevIcon={<NextIcon reverse />}
     >
       {images.map((imageUrl, index) => (
-        <Paper key={index}>
-          <img src={imageUrl} alt="" style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-          
-          }}/>
+        <Paper key={index} style={{ padding: 0, margin: 0 }}>
+          <img
+            src={imageUrl}
+            alt=""
+            style={{
+              display: 'block',
+              maxWidth: '100%',
+              height: 'auto',
+              margin: '0 auto',
+              objectFit: 'cover',
+            }}
+          />
         </Paper>
       ))}
     </Carousel>

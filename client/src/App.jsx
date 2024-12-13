@@ -10,11 +10,11 @@ function App() {
   
   return (
     <>
-      <GoogleOAuthProvider clientId="1024591027781-7a07fpb7aflgaoqc8tgv9qsrd8ka8tdc.apps.googleusercontent.com">
+      {/* <GoogleOAuthProvider clientId="1024591027781-7a07fpb7aflgaoqc8tgv9qsrd8ka8tdc.apps.googleusercontent.com"> */}
         <CartProvider>
           <RouterProvider router={router}/>
         </CartProvider>
-      </GoogleOAuthProvider>
+      {/* </GoogleOAuthProvider> */}
     </>
   )
 }

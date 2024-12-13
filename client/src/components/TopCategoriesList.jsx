@@ -3,15 +3,13 @@ import { useNavigate } from 'react-router-dom';
 
 function TopCategoriesList() {
   const categories = [
-    { name: 'Fruits & Vegetables', image: 'veg.png' },
-    { name: 'Dairy & Breakfast', image: 'fruit.png' },
-    { name: 'Egg, Meat & Fish', image: 'egg-fish.png' },
-    { name: 'Bath & Body', image: 'bath-body.png' },
-    { name: 'Cold drinks & Juices', image: 'juice.png'},
-    { name: 'Snacks & Munchies', image: 'snacks.png'},
-    { name: 'Icy Delights', image: 'ice-cream.png'}
+    { name: 'Engine', image: 'engine.png' },
+    { name: 'Brakes', image: 'engine.png' },
+    { name: 'Tires', image: 'tires.png' },
+    { name: 'Electronics', image: 'engine.png' }, 
+    { name: 'Suspension', image: 'engine.png' }, 
   ];
-
+  
   const navigate = useNavigate();
 
   const listItemVariants = {
@@ -38,10 +36,11 @@ function TopCategoriesList() {
                 }}
               >
                 <img
-                  src={`/images/${category.image}`}
-                  alt={category.name}
-                  className=''
-                />
+                src={`/images/${category.image}`}
+                alt={category.name}
+                style={{ width: '250px', height: '130px' }}
+                className="rounded-md"
+              />
                 <p className='text-center font'>{category.name}</p>
               </motion.div>
             ))}

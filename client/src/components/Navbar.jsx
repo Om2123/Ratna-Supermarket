@@ -313,16 +313,16 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <SimpleDialog open={open} onClose={handleClose} />
+      {/* <SimpleDialog open={open} onClose={handleClose} /> */}
 
-      <SimpleDialog2
+      {/* <SimpleDialog2
         open={open2}
         onClose={handleClose2}
         handleOption={(value) => {
           localStorage.setItem("orderType", value);
           handleClickOpen2();
         }}
-      />
+      /> */}
 
       <SimpleDialog3
         open={open3}

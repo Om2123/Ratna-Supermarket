@@ -48,12 +48,8 @@ const SimpleDialog3 = ({ onClose, open, setIsLogin }) => {
         }}>
             Logout
         </Button>
-        <Typography variant="body2" align="center" gutterBottom style={{ marginTop: '10px' }}>
-            OR
-        </Typography>
-        <Button variant="outlined" color="primary" fullWidth onClick={() => handleOption('GoBack')}>
-            Go Back
-        </Button>
+        
+        
     </DialogContent>
     <DialogActions>
         <Button onClick={onClose} color="secondary">

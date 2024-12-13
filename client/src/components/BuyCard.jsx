@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useCart } from '../actions/CartControl';
 import { useNavigate } from 'react-router-dom';
 
-function BuyCard({ bogo, mrp, discountPrice, imageUrl, productName, discount, id, cart, setCart, setTotal, total, vendorSide }) {
+function BuyCard({ bogo, mrp, discountPrice,description, imageUrl, productName, discount, id, cart, setCart, setTotal, total, vendorSide }) {
   const [count, setCount] = useState(0);
   const { addToCart, removeFromCart, cartItems } = useCart();
   const navigate = useNavigate();
